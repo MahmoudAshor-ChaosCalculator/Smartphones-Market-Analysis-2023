@@ -2,32 +2,30 @@
 
 ## 📌 Project Overview
 In this project, I analyzed a dataset of global smartphones released in 2023 to understand pricing trends, brand positioning, and hardware specs. My goal was to turn raw smartphone data into clear, actionable insights using SQL Server for analysis and Excel for interactive reporting.
-
+---
 ### 🛠️ Tools Used
 - **SQL Server:** Used to query the dataset, clean null values, and extract key metrics (KPIs).
 - **Microsoft Excel:** Used to build Pivot Tables, charts, and an interactive dashboard for visual reporting.
 - **Git & GitHub:** Used for documentation and version control.
-
+---
 #### 🧹 Data Cleaning & Preparation
 Before analyzing the data, I spent time cleaning and structuring the dataset to make sure the metrics were accurate:
 - **Handling Missing Values:** Cleaned missing values in key columns like price, rating, and specs.
 - **Fixing Data Types:** Converted price columns to numeric formats and split string values where necessary.
 - **Removing Duplicates:** Checked for duplicate phone models and removed repetitive records.
 - **Standardizing Brand Names:** Unified brand text formatting so group-by queries in SQL would aggregate correctly.
-
+---
 ##### 📊 Key Performance Indicators & SQL Queries
 
 To extract actionable business insights from the market dataset, I designed a series of aggregate T-SQL queries in SQL Server. These metrics evaluate core market volume, brand positioning, and the adoption rate of modern hardware features.
-
----
 
 1️⃣ Total Brands Overview
 Evaluates overall market diversity and brand competition.
 ```sql
 SELECT 
     COUNT(DISTINCT brand_name) AS Total_brand 
-FROM smartphone;```
-
+FROM smartphone;
+```
 
 2️⃣ Total Models Analyzed
 Measures total product choices available across all manufacturers.
@@ -120,8 +118,42 @@ SELECT
 FROM smartphone;
 ```
 
-
 ###### 💡 Key Dashboard Insights
 - **Market Segmentation:** Mid-range smartphones ($200_$500) dominate the market volume, offering the highest value-for-money features.
 - **5G & Refresh Rate Adoption:** Over 50% of 2023 models feature 5G connectivity and 90Hz+ displays, making high-speed specs a standard expectation rather than a luxury.
 - **RAM vs. Pricing:** 8GB RAM has become the baseline standard for mid-to-high tier devices to ensure smooth performance.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# 📈 Interactive Excel Dashboard
+
+To present these insights visually for business stakeholders, I imported the clean dataset into **Microsoft Excel** and built an interactive dashboard using:
+- **Pivot Tables & Charts:** To analyze model distribution across price segments and feature correlations.
+- **Slicers & KPI Cards:** To allow dynamic filtering by brand, price range, and specs.
+
+---
+## 🚀 How to Run the Project
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MahmoudAshor-ChaosCalculator/Smartphones-Market-Analysis-2023.git
+   ```
+2. **Database Setup:**
+   - Import `smartphones.csv` into SQL Server.
+   - Run `smartphones_kpi_queries.sql` to generate aggregate market insights.
+
+3. **Explore Dashboard:**
+   - Open `Smartphones Final Version.xlsx` to view the interactive dashboard.
+
+---
+
+### 📁 Repository Structure
+
+```text
+.
+├── smartphones csv for sql.csv        # Cleaned dataset used for analysis
+├── Smartphones Final Version.xlsx # Interactive Excel Dashboard
+├── smartphones_kpi_queries.sql    # T-SQL queries script
+├── SQL Queries.docx               # Query results documentation
+└── README.md                      # Project documentation
+```
