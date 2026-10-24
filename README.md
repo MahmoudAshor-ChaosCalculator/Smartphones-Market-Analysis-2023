@@ -11,6 +11,7 @@ In this project, I analyzed a dataset of global smartphones released in 2023 to 
 
 ### 2️⃣ Technical Specs & Performance Dashboard
 ![Second Dashboard View](Screenshot%20For%20Second%20Dashboard.png)
+
 #### 🛠️ Tools Used
 - **SQL Server:** Used to query the dataset, clean null values, and extract key metrics (KPIs).
 - **Microsoft Excel:** Used to build Pivot Tables, charts, and an interactive dashboard for visual reporting.
