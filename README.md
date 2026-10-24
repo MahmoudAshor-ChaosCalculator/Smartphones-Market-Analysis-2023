@@ -3,19 +3,24 @@
 ## 📌 Project Overview
 In this project, I analyzed a dataset of global smartphones released in 2023 to understand pricing trends, brand positioning, and hardware specs. My goal was to turn raw smartphone data into clear, actionable insights using SQL Server for analysis and Excel for interactive reporting.
 ---
-### 🛠️ Tools Used
+### 📷 Dashboard Overview & Visuals
+
+| First Dashboard View | Second Dashboard View |
+| :---: | :---: |
+| ![First Dashboard](Screenshot%20For%20First%20Dashboard.png) | ![Second Dashboard](Screenshot%20For%20Second%20Dashboard.png) |
+#### 🛠️ Tools Used
 - **SQL Server:** Used to query the dataset, clean null values, and extract key metrics (KPIs).
 - **Microsoft Excel:** Used to build Pivot Tables, charts, and an interactive dashboard for visual reporting.
 - **Git & GitHub:** Used for documentation and version control.
 ---
-#### 🧹 Data Cleaning & Preparation
+##### 🧹 Data Cleaning & Preparation
 Before analyzing the data, I spent time cleaning and structuring the dataset to make sure the metrics were accurate:
 - **Handling Missing Values:** Cleaned missing values in key columns like price, rating, and specs.
 - **Fixing Data Types:** Converted price columns to numeric formats and split string values where necessary.
 - **Removing Duplicates:** Checked for duplicate phone models and removed repetitive records.
 - **Standardizing Brand Names:** Unified brand text formatting so group-by queries in SQL would aggregate correctly.
 ---
-##### 📊 Key Performance Indicators & SQL Queries
+###### 📊 Key Performance Indicators & SQL Queries
 
 To extract actionable business insights from the market dataset, I designed a series of aggregate T-SQL queries in SQL Server. These metrics evaluate core market volume, brand positioning, and the adoption rate of modern hardware features.
 
